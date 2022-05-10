@@ -247,3 +247,80 @@ img{
 .galeria img:hover{
     box-shadow: 2px 2px 6px rgb(63, 80, 91);
 }
+
+
+/* =========BLOG=========*/
+.contenedor-blog{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.entrada h2{
+    text-align: left;
+}
+.entrada-meta{
+    display: flex;
+    justify-content: space-between;
+}
+.entrada-meta span{
+    color: #b33939;
+    font-weight: 700;
+}
+.contenido-blog a{
+    display: inline-block;
+    width: 200px;
+    background-color:#b33939;
+}
+aside ul{
+    position: sticky;
+    top:2rem;
+}
+/* ENTRADA BLOG  */
+.contenido-entrada-blog{
+    max-width: 50rem;
+    margin: 0px auto;
+}
+
+/* CONTACTO  */
+.formulario{
+    width: 55rem;
+    margin: 0px auto;
+}
+fieldset{
+    border: 1px solid rgb(26, 44, 65);
+    margin-bottom: 2rem;
+}
+legend{
+    width: 100%;
+    background-color: #b33939;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;   
+}
+.campo{
+    display: flex;
+    margin: 1.5rem;
+
+}
+.campo input:not([type="radio"]), .campo textarea, .campo select{
+    padding: 1rem;
+    flex: 1;
+    border: 1px solid rgb(190, 195, 198);
+    transition: all ease .5s;
+}
+.campo input:not([type="radio"]):focus, .campo textarea:focus{
+    box-shadow: 2px 2px 8px gray;
+    outline: none;
+  }
+
+label{
+    flex-basis: 100px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+}
+input[type="submit"]{
+    border: none;
+    background-color: #b33939;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+}
